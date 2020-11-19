@@ -1,0 +1,49 @@
+.toogle-container{
+    display: flex;
+    width: 8em;
+    height: 2.8em;
+    background-color: #ebf7fc;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.layer{
+    width: 50vw;
+    margin: .2em;
+    border-radius: 3px;
+    transition: background-color .4s;
+}
+
+
+.blue-layer{
+    background-color: #03A9F4;
+    margin-right: 0;
+}
+
+.red-layer{
+    background-color: #F44336;
+    margin-left: 0;
+}
+
+
+.lang-image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    width: 60%;
+    height: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+    .toogle-container{
+        width: 5em;
+        height: 2.5em;
+    }
+    .lang-image{
+        margin-top: 4px;
+        width: 70%;
+        height: 70%;
+    }
+}
