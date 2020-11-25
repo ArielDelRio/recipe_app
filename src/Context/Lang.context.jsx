@@ -17,7 +17,12 @@ export const LANG = {
       go_home: 'Go Home',
       source: 'Source',
       view_recipe_btn: 'View Recipe',
-      loading_text: 'cooking recipes',
+      loading_text: 'Cooking Recipes',
+      calories: 'Calories',
+      cautions: 'Cautions',
+      healts: 'Healts',
+      ingredients: 'Ingredients',
+      weight: 'Weight',
     },
     es: {
       languajes : {
@@ -35,7 +40,12 @@ export const LANG = {
       go_home: 'Regresar',
       source: 'Fuente',
       view_recipe_btn: 'Ver Receta',
-      loading_text: 'Preparando recetas'
+      loading_text: 'Preparando Recetas',
+      calories: 'Calorías',
+      cautions: 'Precauciones',
+      healts: 'Saludable',
+      ingredients: 'Ingredientes',
+      weight: 'Peso',
     },
   }
 

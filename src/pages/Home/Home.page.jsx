@@ -7,7 +7,6 @@ import {LangContext} from '../../Context/Lang.context';
 import SearchInput from "../../components/SearchInput/SearchInput.component";
 import Loading from "../../components/Loading/Loading";
 
-
 const APP_ID = '26b0e423';
 const APP_KEY = 'c438f6649ee33185e891d09d6b720f1a';
 
@@ -38,10 +37,13 @@ const Home = () => {
 
     const api_request = `${domain_api_point}search?q=${recipeName}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
+
     setloading(true);
     axios.get(api_request).then((res)=> {
       setloading(false);
       setRecipes(res.data.hits);
+      console.log(res.data.hits);
+
       if(recipes.length == 0) setnotFoundError(true);
     }).catch((err) => {
       setloading(false);

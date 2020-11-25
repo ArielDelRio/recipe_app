@@ -5,10 +5,10 @@ import ToogleLang from '../ToogleLang/ToogleLang.component';
 
 const Header = () => {
 
-  const {currentLang, setCurrentLang} = useContext(LangContext);
+  const { currentLang } = useContext(LangContext);
   
   return (
-    <header className="App-header d-flex">
+    <header className="App-header d-flex border-bottom border-danger">
       <h1 className="App-title flex-grow-1">
         {LANG[currentLang]['title']}
       </h1>

@@ -11,7 +11,7 @@ const SearchInput = ({getRecipes}) => {
             <form className="search_input_form" onSubmit={getRecipes}>
                 <div className="tb">
                     <div className="td">
-                        <input className="search_input" name="recipeName" type="text" placeholder={LANG[currentLang].search_placeholder} required autoFocus autocomplete="off" />
+                        <input className="search_input" name="recipeName" type="text" placeholder={LANG[currentLang].search_placeholder} required autoFocus autoComplete="off" />
                     </div>
                     <div className="td" id="s-cover">
                         <button type="submit" className="search_input_button">

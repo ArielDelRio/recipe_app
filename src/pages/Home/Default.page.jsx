@@ -12,10 +12,10 @@ const DefaultPage = ({notFoundError}) => {
 
     return (
         <>
-            <RecipeImage style={{maxWidth: '40vh'}} className="pt-5"/>
+            <RecipeImage style={{maxWidth: '40vh'}} className="pt-2"/>
             {notFoundError ? 
                 <div className="pt-4">
-                    <h2 className="d-inline helperText">{LANG[currentLang].helper_text_not_found}</h2>
+                    <h2 className="d-inline helperText ">{LANG[currentLang].helper_text_not_found}</h2>
                     <SadFaceImage className="d-inline px-3" style={{maxWidth: '10vh'}}/>
                 </div> :
                 <div className="pt-4">
