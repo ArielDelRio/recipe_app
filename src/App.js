@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Header from './components/Header/Header.component';
 
@@ -15,12 +15,14 @@ const App = () => {
     <>
     <LangProvider>
         <Header/>
-        <BrowserRouter>
-          <Switch>
-              <Route exact path='/' component={Home}/>
-              <Route path='/recipe/:id' component={Recipe}/>
-          </Switch>
-        </BrowserRouter>
+        <HashRouter basename='/'>
+          <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={Home}/>
+                <Route path='/recipe/:id' component={Recipe}/>
+            </Switch>
+          </BrowserRouter>
+        </HashRouter>
       </LangProvider>
     </>
   );
