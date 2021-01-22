@@ -28,7 +28,6 @@ const SearchInput = ({ getRecipes, recipeName }) => {
               type="text"
               placeholder={LANG[currentLang].search_placeholder}
               required
-              autoFocus
               autoComplete="off"
               onChange={handleChange}
               value={recipeNameValue}
