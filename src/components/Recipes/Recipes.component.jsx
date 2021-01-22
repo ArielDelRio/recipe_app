@@ -39,9 +39,6 @@ const Recipes = ({ recipes, recipeName, page }) => {
                   pathname: `recipe/${recipe.label}`,
                   state: {
                     recipe: recipe,
-                    recipes: recipes,
-                    recipeName: recipeName,
-                    page: page,
                   },
                 }}
               >

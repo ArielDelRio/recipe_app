@@ -17,9 +17,18 @@ const Home = ({
   loading,
   notFoundError,
 }) => {
+  const handleClick = (recipeName, page) => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+
+    getRecipes(recipeName, page);
+  };
+
   const recipesToShow = recipes.slice(
-    page,
-    page + CONFIG.COUNT_RECIPES_FOR_PAGE
+    page * CONFIG.COUNT_RECIPES_FOR_PAGE,
+    (page + 1) * CONFIG.COUNT_RECIPES_FOR_PAGE
   );
 
   return (
@@ -31,7 +40,7 @@ const Home = ({
         />
         {loading ? (
           <Loading />
-        ) : recipes.length ? (
+        ) : recipes.length && count ? (
           <Recipes
             recipes={recipesToShow}
             recipeName={recipeName}
@@ -41,21 +50,17 @@ const Home = ({
           <DefaultPage notFoundError={notFoundError} />
         )}
 
-        {recipes.length > 0 && !loading && (
+        {recipes.length > 0 && count !== 0 && !loading && (
           <>
             <ArrowButton
               direction="left"
               disabled={page === 0}
-              handleClick={(e) =>
-                getRecipes(recipeName, page - CONFIG.COUNT_RECIPES_FOR_PAGE)
-              }
+              handleClick={() => handleClick(recipeName, --page)}
             />
             <ArrowButton
               direction="right"
-              disabled={page + CONFIG.COUNT_RECIPES_FOR_PAGE > count}
-              handleClick={(e) =>
-                getRecipes(recipeName, page + CONFIG.COUNT_RECIPES_FOR_PAGE)
-              }
+              disabled={page * CONFIG.COUNT_RECIPES_FOR_PAGE > count}
+              handleClick={() => handleClick(recipeName, ++page)}
             />
           </>
         )}

@@ -37,7 +37,7 @@ const App = () => {
 
     //same recipeName and recipes in state
     if (
-      state.recipes.length > pageToSearch &&
+      state.recipes.length > pageToSearch * CONFIG.COUNT_RECIPES_FOR_PAGE &&
       recipeNametoSearch === state.recipeName
     ) {
       setState({ ...state, page: pageToSearch });
@@ -51,8 +51,12 @@ const App = () => {
 
     const api_request = `${domain_api_point}search?q=${recipeNametoSearch}&app_id=${
       CONFIG.APP_ID
-    }&app_key=${CONFIG.APP_KEY}&from=${pageToSearch}&to=${
-      pageToSearch + CONFIG.COUNT_RECIPES_FOR_PAGE
+    }&app_key=${CONFIG.APP_KEY}&from=${
+      pageToSearch * CONFIG.COUNT_RECIPES_FOR_PAGE
+    }&to=${
+      state.recipes.length > 0 && recipeNametoSearch === state.recipeName
+        ? state.recipes.length * 2
+        : CONFIG.COUNT_RECIPES_FOR_PAGE * 2
     }`;
 
     setloading(true);
@@ -60,7 +64,6 @@ const App = () => {
       .get(api_request)
       .then((res) => {
         setloading(false);
-        console.log(res.data);
 
         if (recipeNametoSearch !== state.recipeName) {
           setState({
@@ -80,7 +83,7 @@ const App = () => {
           });
         }
 
-        if (state.recipes.length == 0) setnotFoundError(true);
+        if (state.recipes.length === 0) setnotFoundError(true);
       })
       .catch((err) => {
         setloading(false);

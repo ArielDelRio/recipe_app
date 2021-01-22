@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link, Redirect } from "react-router-dom";
 
 import { LangContext, LANG } from "../../Context/Lang.context";
@@ -7,9 +7,14 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Recipe = ({ location }) => {
   const { currentLang } = useContext(LangContext);
-  console.log(location.state);
-
   const recipe = location.state?.recipe;
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+  }, []);
 
   return !location.state ? (
     <Redirect to="/" />
