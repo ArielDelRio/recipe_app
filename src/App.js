@@ -99,7 +99,7 @@ const App = () => {
           <Switch>
             <Route
               exact
-              path="/"
+              path="/recipe_app"
               render={() => (
                 <Home
                   recipes={state.recipes}
@@ -112,8 +112,8 @@ const App = () => {
                 />
               )}
             />
-            <Route path="/recipe/:id" component={Recipe} />
-            <Redirect path="*" to="/" />;
+            <Route path="/recipe_app/recipe/:id" component={Recipe} />
+            {/* <Redirect path="*" to="/recipe-app" />; */}
           </Switch>
         </BrowserRouter>
       </HashRouter>
