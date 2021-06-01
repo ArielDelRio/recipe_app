@@ -17,7 +17,7 @@ const Recipe = ({ location }) => {
   }, []);
 
   return !location.state ? (
-    <Redirect to="/" />
+    <Redirect to="/recipe_app" />
   ) : (
     <div className="container px-lg-5 px-sm-2 pb-3">
       <div className="card light-card shadow">
@@ -72,7 +72,7 @@ const Recipe = ({ location }) => {
               <Link
                 className="btn btn-outline-danger"
                 to={{
-                  pathname: "/",
+                  pathname: "/recipe_app",
                 }}
               >
                 {LANG[currentLang].go_home}

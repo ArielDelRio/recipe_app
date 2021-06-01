@@ -36,7 +36,7 @@ const Recipes = ({ recipes, recipeName, page }) => {
               <Link
                 className="btn btn-outline-danger btn-block recipe_buttons"
                 to={{
-                  pathname: `recipe/${recipe.label}`,
+                  pathname: `/recipe_app/recipe/${recipe.label}`,
                   state: {
                     recipe: recipe,
                   },
