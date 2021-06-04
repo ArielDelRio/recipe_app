@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 
 import { Link } from "react-router-dom";
 import { LangContext, LANG } from "../../Context/Lang.context";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import RecipeImage from "./RecipeImage.component";
+
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Recipes = ({ recipes, recipeName, page }) => {
@@ -14,15 +15,7 @@ const Recipes = ({ recipes, recipeName, page }) => {
         {recipes.map(({ recipe }) => (
           <div key={recipe.uri} className="col-md-4 p-4">
             <div className="recipes__box">
-              <div className="recipes__box_image_container">
-                <LazyLoadImage
-                  width="100%"
-                  height="220px"
-                  effect="blur"
-                  src={recipe.image}
-                  alt={recipe.title}
-                />
-              </div>
+              <RecipeImage image={recipe.image} title={recipe.title} />
               <div className="recipe__text">
                 <h5 className="recipes__title">
                   {recipe.label.length < 20
