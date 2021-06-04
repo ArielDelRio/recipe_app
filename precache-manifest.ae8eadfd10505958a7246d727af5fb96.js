@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3588ef106b5bf84028b6d2b39fe5dd6",
+    "revision": "7ee8afd7a04678f2eaea34d395a9556b",
     "url": "/recipe_app/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/recipe_app/static/css/2.faa62aa3.chunk.css"
   },
   {
-    "revision": "4c303bb6bcb8a44e6ab9",
-    "url": "/recipe_app/static/css/main.ee9afb72.chunk.css"
+    "revision": "e372e18009833e5bd345",
+    "url": "/recipe_app/static/css/main.b9daf9e5.chunk.css"
   },
   {
     "revision": "5b029814f9c7b8693b7d",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/recipe_app/static/js/2.7e34e4d6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c303bb6bcb8a44e6ab9",
-    "url": "/recipe_app/static/js/main.b710a216.chunk.js"
+    "revision": "e372e18009833e5bd345",
+    "url": "/recipe_app/static/js/main.86abf792.chunk.js"
   },
   {
     "revision": "a9d402b641426411166e",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/recipe_app/static/media/english_language.0aa8a986.png"
   },
   {
-    "revision": "5962f2b6d24d310cb102e9803862a1b3",
-    "url": "/recipe_app/static/media/recipe.5962f2b6.svg"
+    "revision": "a30679867e58a6c8937ba95423d5a416",
+    "url": "/recipe_app/static/media/recipe.a3067986.svg"
   },
   {
-    "revision": "927ca3b125a7b73c7ffa95cf7a06d8e9",
-    "url": "/recipe_app/static/media/sad-face.927ca3b1.svg"
+    "revision": "8c6c677f0771a456a3e40e14c1c76de7",
+    "url": "/recipe_app/static/media/sad-face.8c6c677f.svg"
   },
   {
-    "revision": "7c74d8f0246f45d70d11e2e14e67aa4a",
-    "url": "/recipe_app/static/media/smile.7c74d8f0.svg"
+    "revision": "f4a3450050e37c09b7d6908cc3201459",
+    "url": "/recipe_app/static/media/smile.f4a34500.svg"
   },
   {
     "revision": "1b7fc0bf1d1b73a253f3fd7560dd207b",
