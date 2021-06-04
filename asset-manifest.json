@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/recipe_app/static/css/main.b9daf9e5.chunk.css",
-    "main.js": "/recipe_app/static/js/main.86abf792.chunk.js",
-    "main.js.map": "/recipe_app/static/js/main.86abf792.chunk.js.map",
+    "main.css": "/recipe_app/static/css/main.f09bd3e3.chunk.css",
+    "main.js": "/recipe_app/static/js/main.18608bdc.chunk.js",
+    "main.js.map": "/recipe_app/static/js/main.18608bdc.chunk.js.map",
     "runtime-main.js": "/recipe_app/static/js/runtime-main.0fbdace6.js",
     "runtime-main.js.map": "/recipe_app/static/js/runtime-main.0fbdace6.js.map",
     "static/css/2.faa62aa3.chunk.css": "/recipe_app/static/css/2.faa62aa3.chunk.css",
-    "static/js/2.7e34e4d6.chunk.js": "/recipe_app/static/js/2.7e34e4d6.chunk.js",
-    "static/js/2.7e34e4d6.chunk.js.map": "/recipe_app/static/js/2.7e34e4d6.chunk.js.map",
+    "static/js/2.a94bc3e2.chunk.js": "/recipe_app/static/js/2.a94bc3e2.chunk.js",
+    "static/js/2.a94bc3e2.chunk.js.map": "/recipe_app/static/js/2.a94bc3e2.chunk.js.map",
     "index.html": "/recipe_app/index.html",
-    "precache-manifest.ae8eadfd10505958a7246d727af5fb96.js": "/recipe_app/precache-manifest.ae8eadfd10505958a7246d727af5fb96.js",
+    "precache-manifest.f52212ce26ebd536f94707a97706722d.js": "/recipe_app/precache-manifest.f52212ce26ebd536f94707a97706722d.js",
     "service-worker.js": "/recipe_app/service-worker.js",
     "static/css/2.faa62aa3.chunk.css.map": "/recipe_app/static/css/2.faa62aa3.chunk.css.map",
-    "static/css/main.b9daf9e5.chunk.css.map": "/recipe_app/static/css/main.b9daf9e5.chunk.css.map",
-    "static/js/2.7e34e4d6.chunk.js.LICENSE.txt": "/recipe_app/static/js/2.7e34e4d6.chunk.js.LICENSE.txt",
+    "static/css/main.f09bd3e3.chunk.css.map": "/recipe_app/static/css/main.f09bd3e3.chunk.css.map",
+    "static/js/2.a94bc3e2.chunk.js.LICENSE.txt": "/recipe_app/static/js/2.a94bc3e2.chunk.js.LICENSE.txt",
     "static/media/english_language.png": "/recipe_app/static/media/english_language.0aa8a986.png",
-    "static/media/recipe.a3067986.svg": "/recipe_app/static/media/recipe.a3067986.svg",
-    "static/media/sad-face.8c6c677f.svg": "/recipe_app/static/media/sad-face.8c6c677f.svg",
-    "static/media/smile.f4a34500.svg": "/recipe_app/static/media/smile.f4a34500.svg",
+    "static/media/recipe.5962f2b6.svg": "/recipe_app/static/media/recipe.5962f2b6.svg",
+    "static/media/sad-face.927ca3b1.svg": "/recipe_app/static/media/sad-face.927ca3b1.svg",
+    "static/media/smile.7c74d8f0.svg": "/recipe_app/static/media/smile.7c74d8f0.svg",
     "static/media/spanish_language.png": "/recipe_app/static/media/spanish_language.1b7fc0bf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0fbdace6.js",
     "static/css/2.faa62aa3.chunk.css",
-    "static/js/2.7e34e4d6.chunk.js",
-    "static/css/main.b9daf9e5.chunk.css",
-    "static/js/main.86abf792.chunk.js"
+    "static/js/2.a94bc3e2.chunk.js",
+    "static/css/main.f09bd3e3.chunk.css",
+    "static/js/main.18608bdc.chunk.js"
   ]
 }
