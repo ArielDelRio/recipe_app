@@ -23,8 +23,7 @@ const Recipe = ({ location }) => {
       <div className="card light-card shadow">
         <LazyLoadImage
           effect="blur"
-          className="image-recipe card-img-top img-fluid"
-          style={{ height: "45vh" }}
+          className="image-recipe card-img-top"
           src={recipe.image}
           alt={recipe.label}
         />

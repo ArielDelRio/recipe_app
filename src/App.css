@@ -174,3 +174,14 @@ input:-webkit-autofill {
   0% { transform: rotate(3deg); }
   100% { transform: rotate(-3deg); }
 }
+
+.image-recipe {
+  height: 75vh;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .image-recipe {
+    height: 45vh;
+  }
+}
