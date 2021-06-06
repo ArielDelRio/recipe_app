@@ -22,3 +22,6 @@ The application was developed with [React](https://reactjs.org/), and [React Rou
 To make requests to the api, the [axios](https://axios-http.com/) library was used.
 
 [Bootstrap](https://getbootstrap.com/) was used to design the page and [react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component) and [react-loading-skeleton](https://www.npmjs.com/package/react-loading-skeleton) were used to load and process the images, giving a more fluid appearance to the loading of images and being more attractive to the user
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
